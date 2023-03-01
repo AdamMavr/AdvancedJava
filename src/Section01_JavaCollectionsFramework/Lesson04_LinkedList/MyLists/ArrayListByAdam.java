@@ -8,7 +8,7 @@ public class ArrayListByAdam<T> {
     private int size; // Количество элеметов в массиве
     private final int DEFAULT_CAPACITY = 10; // размер массива по умолчанию
 
-    // Консруктор задающий размер массива
+    // Консруктор задающий размер массива (прописывается в аргументах объекта)
     public ArrayListByAdam(int capacity) {
         if (capacity <= 0) {
             throw new IllegalArgumentException();
@@ -38,7 +38,7 @@ public class ArrayListByAdam<T> {
     public void add(T item ) {
         //Проверка на переполнение массива
         if(size == array.length - 1) {
-            resize(array.length * 2);
+            resize(array.length + 1);
         }
 
         array[size++] = item;
@@ -55,7 +55,7 @@ public class ArrayListByAdam<T> {
     }
 
 
-    // Масштабирование размера
+    // Масштабирование размера массива путем создания нового массива и копирования данных в него из старого массива
     public void resize(int newLength) {
         T[] newArray = (T[]) new Object[newLength];
         System.arraycopy(array, 0, newArray, 0, size);
