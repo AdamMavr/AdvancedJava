@@ -26,7 +26,7 @@ public class Lots {
         //union - объединение множеств
         Set<Integer> unionSet = new HashSet<>(firstSet); // addAll добавляет сет в аргументах в сет вызывающий метод
         unionSet.addAll(secondSet);
-        System.out.println(unionSet );
+        System.out.println(unionSet);
 
         // intersection - пересечение множеств
         Set<Integer> intersection = new HashSet<>(firstSet);

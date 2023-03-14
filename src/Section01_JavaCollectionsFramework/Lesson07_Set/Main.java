@@ -11,6 +11,7 @@ public class Main {
         Set<String> linkedHashSet = new LinkedHashSet<>(); // сохраняется порядок ввода
         Set<String> treeSet = new TreeSet<>(); // сортировка естественным порядком
 
+
         hashSet.add("Adam");
         hashSet.add("Vella");
         hashSet.add("Elena");
@@ -23,10 +24,5 @@ public class Main {
 
         // метод isEmpty - проверка на пустоту сета
         System.out.println(hashSet.isEmpty());
-
-
-
-        // union - объединение множеств
-
     }
 }
